@@ -10,5 +10,11 @@ data class GetUserResponse (
     @field:SerializedName("email")
     val email: String? = null,
     @field:SerializedName("password")
-    val password: String? = null
+    val password: String? = null,
+    @field:SerializedName("nama_lengkap")
+    val namaLengkap: String? = null,
+    @field:SerializedName("alamat")
+    val alamat: String? = null,
+    @field:SerializedName("status")
+    val status: String? = null
 )

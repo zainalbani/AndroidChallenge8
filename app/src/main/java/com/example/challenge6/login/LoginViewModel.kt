@@ -1,18 +1,18 @@
 package com.example.challenge6.login
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import androidx.lifecycle.*
+import com.example.challenge6.datastore.UserManager
 import com.example.challenge6.model.user.GetUserResponse
 import com.example.challenge6.network.ApiServiceUser
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import javax.inject.Inject
 
 @HiltViewModel
-class LoginViewModel @Inject constructor (private val client: ApiServiceUser): ViewModel(){
+class LoginViewModel @Inject constructor (private val client: ApiServiceUser, private val pref: UserManager): ViewModel(){
     private val _user: MutableLiveData<GetUserResponse?> = MutableLiveData()
     val user: LiveData<GetUserResponse?> get() = _user
 
@@ -47,5 +47,27 @@ class LoginViewModel @Inject constructor (private val client: ApiServiceUser): V
                     TODO("Not yet implemented")
                 }
             })
+    }
+    fun saveIsLoginStatus(status: Boolean) {
+        viewModelScope.launch {
+            pref.saveIsLoginStatus(status)
+        }
+    }
+
+
+    fun saveUsername(username: String) {
+        viewModelScope.launch {
+            pref.saveUsername(username)
+        }
+    }
+
+    fun saveId(id: Int){
+        viewModelScope.launch {
+            pref.saveId(id)
+        }
+    }
+
+    fun getDataStoreIsLogin(): LiveData<Boolean> {
+        return pref.getIsLogin.asLiveData()
     }
 }

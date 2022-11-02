@@ -14,7 +14,7 @@ class RegisterViewModel @Inject constructor(private val client: ApiServiceUser) 
 
     fun insertUser(username: String, email: String, password: String) {
         client.insertUser(
-            User(username, email, password)
+            User(username, email, password,"","","")
         )
             .enqueue(object : retrofit2.Callback<PostUserResponse> {
                 override fun onResponse(

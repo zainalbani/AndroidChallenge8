@@ -4,8 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/User/StudioProjects/Challenge6/app/src/main/res/font/font.xml" value="0.1" />
+        <entry key="..\:/Users/User/StudioProjects/Challenge6/app/src/main/res/layout/activity_detail.xml" value="0.26171875" />
+        <entry key="..\:/Users/User/StudioProjects/Challenge6/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/User/StudioProjects/Challenge6/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/User/StudioProjects/Challenge6/app/src/main/res/layout/activity_profile.xml" value="0.25" />
         <entry key="..\:/Users/User/StudioProjects/Challenge6/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/User/StudioProjects/Challenge6/app/src/main/res/layout/item_movie.xml" value="0.1" />
       </map>
     </option>
   </component>

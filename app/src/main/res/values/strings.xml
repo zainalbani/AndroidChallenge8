@@ -16,4 +16,10 @@
     <string name="error_valid_email_password">Email dan Password salah</string>
     <string name="text_logout">Logout</string>
     <string name="have_account">Sudah Memiliki Akun? Login</string>
+    <string name="my_profile">My Profile</string>
+    <string name="username">username</string>
+    <string name="email">email</string>
+    <string name="nama">nama lengkap</string>
+    <string name="alamat">alamat</string>
+    <string name="status">status</string>
 </resources>
