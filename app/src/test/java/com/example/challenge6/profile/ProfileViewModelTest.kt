@@ -15,7 +15,6 @@ import retrofit2.Call
 
 class ProfileViewModelTest {
     lateinit var service : ApiServiceUser
-    lateinit var userProfile: UserProfile
 
     @Before
     fun setUp(){

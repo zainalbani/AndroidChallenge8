@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.challenge6">
+    package="com.binartest.challenge8">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -9,33 +9,33 @@
 
 
     <application
-        android:name=".App"
+        android:name="com.binartest.challenge8.App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_new_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_new_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Challenge5.Two"
         tools:targetApi="31">
         <activity
-            android:name=".profile.ProfileActivity"
+            android:name="com.binartest.challenge8.profile.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".detail.DetailActivity"
+            android:name="com.binartest.challenge8.detail.DetailActivity"
             android:exported="false" />
         <activity
-            android:name=".home.HomeActivity"
+            android:name="com.binartest.challenge8.home.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.binartest.challenge8.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".register.RegisterActivity"
+            android:name="com.binartest.challenge8.register.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".login.LoginActivity"
+            android:name="com.binartest.challenge8.login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
