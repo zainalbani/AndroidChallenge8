@@ -9,6 +9,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('E:\\DOKUMEN BACKUP (jangan di hapus)\\Downloads\\MSIB\\binarmovie.jks')
+            storePassword 'Prabowo878'
+            keyAlias 'key0'
+            keyPassword 'Prabowo878'
+        }
+    }
     compileSdk 32
 
     defaultConfig {
@@ -18,7 +26,6 @@ android {
         versionCode 1
         versionName "1.0"
         flavorDimensions "default"
-        signingConfig signingConfigs.debug
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -36,6 +43,7 @@ android {
 
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -76,6 +84,7 @@ android {
     lintOptions {
         baseline file("lint-baseline.xml")
     }
+
 
 }
 
