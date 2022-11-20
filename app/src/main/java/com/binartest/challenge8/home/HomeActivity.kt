@@ -12,7 +12,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
-//test
+
     private var _binding : ActivityHomeBinding? = null
     private val binding get() = _binding!!
     private lateinit var viewModel : HomeViewModel
