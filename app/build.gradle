@@ -11,10 +11,10 @@ plugins {
 android {
     signingConfigs {
         release {
-            storeFile file('E:\\DOKUMEN BACKUP (jangan di hapus)\\Downloads\\MSIB\\binarmovie.jks')
-            storePassword 'Prabowo878'
-            keyAlias 'key0'
-            keyPassword 'Prabowo878'
+            storeFile file('E:\\DOKUMEN BACKUP (jangan di hapus)\\Downloads\\MSIB\\binarrr.jks')
+            storePassword 'password'
+            keyAlias 'binarmovie'
+            keyPassword 'password'
         }
     }
     compileSdk 32
