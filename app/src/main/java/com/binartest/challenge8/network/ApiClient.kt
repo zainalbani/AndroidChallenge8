@@ -16,6 +16,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 
+@Suppress("unused")
 class ApiClient {
 
     @Singleton

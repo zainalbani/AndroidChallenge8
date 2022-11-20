@@ -9,7 +9,7 @@ import androidx.datastore.preferences.preferencesDataStore
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
-
+@Suppress("unused")
 class UserManager(@ApplicationContext val context: Context) {
     val getUsername : Flow<String> = context.dataStore.data.map {
         it[USERNAME_KEY] ?: ""

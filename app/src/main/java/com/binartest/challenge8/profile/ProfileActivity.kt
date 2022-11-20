@@ -26,6 +26,7 @@ import java.io.FileOutputStream
 import java.io.IOException
 
 @AndroidEntryPoint
+@Suppress("PrivatePropertyName")
 class ProfileActivity : AppCompatActivity() {
     private var _binding : ActivityProfileBinding? = null
     private val binding get() =_binding!!

@@ -1,5 +1,7 @@
+@file:Suppress("DEPRECATION")
 package com.binartest.challenge8.worker
 
+import android.annotation.SuppressLint
 import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
@@ -16,6 +18,8 @@ import com.binartest.challenge8.R
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
+
+@SuppressLint("MissingPermission")
 
 fun makeStatusNotification(message: String, context: Context) {
 

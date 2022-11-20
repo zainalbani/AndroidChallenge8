@@ -1,7 +1,7 @@
 package com.example.challenge6.detail
 
-import com.example.challenge6.model.movie.MovieDetailData
-import com.example.challenge6.network.ApiServiceMovie
+import com.binartest.challenge8.model.movie.MovieDetailData
+import com.binartest.challenge8.network.ApiServiceMovie
 import io.mockk.every
 import io.mockk.mockk
 import kotlinx.coroutines.runBlocking
@@ -12,7 +12,7 @@ import org.junit.Test
 import retrofit2.Call
 
 class DetailViewModelTest {
-    lateinit var service: ApiServiceMovie
+    private lateinit var service: ApiServiceMovie
 
     @Before
     fun setUp() {

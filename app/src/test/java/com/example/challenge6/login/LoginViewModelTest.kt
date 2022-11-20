@@ -1,10 +1,9 @@
 package com.example.challenge6.login
 
-import com.example.challenge6.model.user.GetUserResponse
-import com.example.challenge6.network.ApiServiceUser
+import com.binartest.challenge8.model.user.GetUserResponse
+import com.binartest.challenge8.network.ApiServiceUser
 import io.mockk.every
 import io.mockk.mockk
-import io.mockk.verify
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*
 
@@ -13,7 +12,7 @@ import org.junit.Test
 import retrofit2.Call
 
 class LoginViewModelTest {
-    lateinit var service : ApiServiceUser
+    private lateinit var service : ApiServiceUser
     @Before
     fun setUp() {
         service = mockk ()

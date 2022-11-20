@@ -9,6 +9,7 @@ import com.binartest.challenge8.detail.DetailActivity
 import com.binartest.challenge8.model.movie.GetNowPlayingResponseItem
 import com.bumptech.glide.Glide
 
+@Suppress("PrivatePropertyName")
 class MovieAdapter(
     private val listMovie: List<GetNowPlayingResponseItem>
 ) : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
@@ -23,7 +24,7 @@ class MovieAdapter(
                 binding.tvTahun.text = dataMovie.releaseDate
                 Glide.with(itemView).load(IMAGE_BASE + dataMovie.posterPath).into(binding.imgPoster)
                 binding.cvIdMovie.setOnClickListener {
-                    var id = Intent(context, DetailActivity::class.java).apply {
+                    val id = Intent(context, DetailActivity::class.java).apply {
                         putExtra("id", dataMovie.id)
                     }
                     context.startActivity(id)
