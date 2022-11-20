@@ -11,7 +11,7 @@ plugins {
 android {
     signingConfigs {
         release {
-            storeFile file('E:\\DOKUMEN BACKUP (jangan di hapus)\\Downloads\\MSIB\\binarrr.jks')
+            storeFile file('C:\\Users\\User\\StudioProjects\\Challenge8\\binarrr.jks')
             storePassword 'password'
             keyAlias 'binarmovie'
             keyPassword 'password'
