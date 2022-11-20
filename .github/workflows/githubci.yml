@@ -25,5 +25,5 @@ jobs:
       - name: Releasing using Hub
         uses: kyze8439690/action-release-releaseapk@master
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{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}}
           APP_FOLDER: app
