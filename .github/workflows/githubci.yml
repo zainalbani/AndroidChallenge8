@@ -21,7 +21,7 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
       - name: Build Release APK
-       run: ./gradlew assembleRelease
+        run: ./gradlew assembleRelease
       - name: Releasing using Hub
         uses: kyze8439690/action-release-releaseapk@master
         env:
