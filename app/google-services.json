@@ -46,7 +46,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:969157480902:android:ad0bb803e4e1339aa5e2c7",
         "android_client_info": {
-          "package_name": "com.example.firebase"
+          "package_name": "com.binartest.challenge8.free"
         }
       },
       "oauth_client": [
@@ -54,7 +54,7 @@
           "client_id": "969157480902-pircks3l7u2vnkkqsgmnse5oholmd2tu.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.firebase",
+            "package_name": "com.binartest.challenge8.free",
             "certificate_hash": "6cad54defdf3ee27edd036fcf0576fe4efa05fcb"
           }
         },
