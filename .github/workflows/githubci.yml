@@ -2,9 +2,9 @@ name: Build
 
 on:
   push:
-    branches: [master]
+    branches: [ master ]
   pull_request:
-    branches: [master]
+    branches: [ master ]
 
 jobs:
   build:
@@ -20,3 +20,10 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew build
+      - name: Build Release APK
+        run: ./gradlew assembleRelease
+      - name: Releasing using Hub
+        uses: kyze8439690/action-release-releaseapk@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          APP_FOLDER: app
